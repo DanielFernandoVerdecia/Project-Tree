@@ -1,0 +1,113 @@
+<section>
+
+
+    <article>
+
+
+        <h1 class = "rancho-fuente centrar-texto size-title">
+            ¿Quiénes somos?
+        </h1>
+        
+        
+        <div class = "centrar-texto">
+
+            <p class = "roboto-fuente size-width text-center">
+                Nos encanta ayudar, en educación, salud, deporte, cultura, acceso a empleo a personas con discapacidad, física, mental, intelectual.
+                Capacitaciones en manejo de lenguaje de señas, instrucciones para el manejo del sistema de escritura táctil y lectura para personas siegas, Braille.
+                Todos somos diferentes, pero aun así somos humanos con mucho valor.
+            </p>
+
+        </div>
+
+        <!--SVG braille y manos-->
+        <div class = "centrar-texto">
+
+         <!--SVG braille-->
+         <img 
+         class = "size-svg"
+         src = "./assets/content-info/braille.svg" alt="">
+         <!--Fin SVG braille-->
+
+         <!--SVG manos-->
+         <img 
+         class = "size-svg"
+         src = "./assets/content-info/manos.svg" alt="">
+         <!--Fin SVG manos-->
+
+
+        </div> 
+        <!--Fin SVG braille y manos-->
+       
+    
+    </article>
+
+    <!--Integrantes-->
+    <article>
+
+      <h1 class = "rancho-fuente centrar-texto size-title">
+         Integrantes
+      </h1>
+
+
+      <!--Integrantes fotos-->
+      <div class = "centrar-texto">
+
+         <!--Foto fundadora-->
+         <div class = "card-integrante-morado  roboto-fuente"
+         (mouseenter) = "activar_giro_card('Tarjeta 1')"
+         (mouseleave) = "desactivar_giro_card('Tarjeta 1')"
+         
+         [ngClass] = "{'giro-tarjeta': animacion_card_morado}"
+
+         >
+
+            <img 
+
+            *ngIf = "!animacion_card_morado"
+            
+            class = "img-integrantes"
+            src = "./assets/content-info/fundadora.png" alt="">
+            
+            <!--Info completa Integrante-->
+            <div
+            class = "size-info-integrante"
+            *ngIf = "animacion_card_morado"
+            >
+
+            </div>
+            <!--Fin Info completa Integrante-->
+            
+            <!--Breve descripción integrante-->
+            <div class = "morado-b-descrip-i">
+
+               <p class = "caveat-fuente size-integrante">
+                Angela Manrique.
+               </p>
+
+               <!--Cargo-->
+               <p class = "cargo rancho-fuente size-cargo">
+                  Fundadora
+               </p>
+               <!--Fin Cargo-->
+
+            </div>
+            <!--Fin Breve descripción integrante-->
+
+         </div>
+         <!--Fin Foto fundadora-->
+       </div> 
+        <!--Fin Integrantes fotos-->
+
+      
+
+    </article>
+   <!--Fin Integrantes-->      
+
+    
+
+   
+
+   
+    
+
+</section>

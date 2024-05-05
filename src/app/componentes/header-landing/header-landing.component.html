@@ -1,0 +1,119 @@
+<header>
+
+    <!--Logo asociación-->
+    <div>
+        <img
+        class = "logo-size"
+        src = "./assets/header/logo.jpeg" alt="">
+    </div>
+    <!--Fin Logo asociación-->
+
+    <!--Opciones header-->
+    <div class = "botones-izquierda">
+        
+        <!--Botón donar-->
+        <button class = "roboto-fuente boton_donar"> 
+            
+            <span>Donar</span>
+
+            <!--Icono donar-->
+            <i class="fa-solid fa-hand-holding-heart"></i>
+            <!--Fin Icono donar-->
+
+        </button>
+        <!--Fin Botón donar-->
+
+        <!--Botón integrantes-->
+        <button class = "roboto-fuente boton_integrantes"
+        (mouseenter) = "animacion_entrada_icono_integrante_btn()"
+        (mouseleave) = "animacion_entrada_texto_integrante_btn()"
+        >
+
+            <span
+            *ngIf = "!ver_anima_integrante_bt"
+            [ngClass] = "{'animacion-entrada-texto': !ver_anima_integrante_bt}"
+            >
+                Integrantes
+            </span>
+            
+            <!--Icono integrante (dos manos estrechandose)-->
+            <div class = "container"
+            *ngIf = "ver_anima_integrante_bt"
+            [ngClass] = "{'animacion-entrada-icono-integrante': ver_anima_integrante_bt}"
+            >
+                <i class="fa-solid fa-handshake"></i>
+            </div>
+            <!--Icono integrante (dos manos estrechandose)-->
+
+
+        </button>
+        <!--Fin botón integrantes-->
+
+
+         <!--Botón noticias-->
+         <button class = "roboto-fuente boton_noticias"
+         (mouseenter) = "animacion_activar_icono_noticias()"
+         (mouseleave) = "animacion_desactivar_icono_noticias()"
+         >  
+         
+            <span>
+                Noticias
+            </span>
+        
+            <!--Icono noticias-->
+            <i class="fa-solid fa-envelope"
+            [ngClass] = "{'animacion-btn-noticias': ver_anima_icono_noticias }"
+            ></i>
+            <!--Fin Icono noticias-->
+
+        </button>
+        <!--Fin Botón noticias-->
+
+        <!--Botón crear cuenta usuario-->
+        <button class = "roboto-fuente boton_crear_cuenta">
+
+            <div>
+
+                <span>
+                    Crear cuenta
+                </span>
+                
+
+                <!--Icono crear cuenta-->
+                <i class="fa-solid fa-user"></i>
+                <!--Fin Icono crear cuenta-->
+
+            </div>
+            
+
+        
+        </button>
+        <!--Fin Botón crear cuenta usuario-->
+
+
+        <!--Botón iniciar sesión-->
+        <button class = "roboto-fuente boton_inicar_sesion"
+        (mouseenter) = "animacion_activar_icono_login()"
+        (mouseleave) = "animacion_desactivar_icono_login()"
+        >
+            
+            <span>
+                Iniciar sesión
+            </span>
+            
+            <!--Icono iniciar sesión-->
+            <i 
+            class="fa-solid fa-key"
+            [ngClass] = "{'animacion-btn-inicio-sesion': ver_anima_icono_login}"
+            ></i>
+            <!--Fin Icono iniciar sesión-->
+            
+
+        
+        </button>
+        <!--Fin Botón iniciar sesión-->
+
+    </div>
+    <!--Fin Opciones header-->
+
+</header>

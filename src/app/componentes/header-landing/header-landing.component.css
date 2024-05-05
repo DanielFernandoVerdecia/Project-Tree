@@ -1,0 +1,344 @@
+header{
+
+    background: linear-gradient(109.6deg, rgb(102, 203, 149) 11.2%, rgb(39, 210, 175) 98.7%);
+    padding: 2rem;
+
+    height: 15rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    
+}
+
+.logo-size{
+  width: 10rem;
+  height: 10rem;
+   
+  border-radius: .5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+/*Contenedor Header Botones izquierda*/
+.botones-izquierda{
+  display: flex;
+  gap: 2rem;
+
+}
+
+/*Fin Contenedor Header Botones izquierda*/
+
+/*Botón donar*/
+.boton_donar {
+    width: 9rem;
+    height: 4.5rem;
+    border: unset;
+    border-radius: 0.5rem;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 1rem;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+
+    cursor: pointer;
+}
+   
+.boton_donar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 0.5rem;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 0.5s;
+}
+   
+.boton_donar:hover {
+    color: #e8e8e8;
+
+    border-radius: 2rem;
+    transition: all 250ms;
+}
+   
+.boton_donar:hover::before {
+    width: 100%;
+}
+/*Fin Botón donar*/
+
+
+
+/*Botón integrantes equipo*/
+.boton_integrantes {
+  width: 9rem;
+  height: 4.5rem;
+  border: unset;
+  border-radius: 0.5rem;
+  color: #212121;
+  z-index: 1;
+  background: #e8e8e8;
+  position: relative;
+  font-weight: 1000;
+  font-size: 1rem;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms;
+  overflow: hidden;
+
+  cursor: pointer;
+}
+ 
+.boton_integrantes::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 0.5rem;
+  background-color: #212121;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 0.5s;
+}
+
+.boton_integrantes:hover {
+  color: #e8e8e8;
+
+  border-radius: 2rem;
+  transition: all 250ms;
+
+  text-overflow: hidden;
+
+}
+ 
+.boton_integrantes:hover::before {
+  width: 100%;
+}
+
+
+.animacion-entrada-texto{
+  animation: fadeInDown;
+  animation-duration: .4s;
+
+}
+
+.animacion-entrada-icono-integrante{
+
+  animation: fadeInDownBig;
+  animation-duration: .2s;
+  
+}
+/*Fin Botón integrantes equipo*/
+
+
+/*Botón noticias*/
+.boton_noticias {
+  width: 9rem;
+  height: 4.5rem;
+  border: unset;
+  border-radius: 0.5rem;
+  color: #212121;
+  z-index: 1;
+  background: #e8e8e8;
+  position: relative;
+  font-weight: 1000;
+  font-size: 1rem;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms;
+  overflow: hidden;
+
+  cursor: pointer;
+}
+ 
+.boton_noticias::before {
+  content: "";
+  background-color: #212121;
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.5s;
+}
+
+.boton_noticias:hover {
+  color: #e8e8e8;
+
+  border-radius: 2rem;
+  transition: all 250ms;
+  
+  text-overflow: hidden;
+
+}
+ 
+.boton_noticias:hover::before {
+
+
+  transform: skewX(-45deg) scale(1, 1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+
+
+}
+
+.animacion-btn-noticias{
+
+
+  animation: bounce 1.8s infinite ease-out;
+
+}
+
+/*Fin Botón noticias*/
+
+
+/*Botón crear cuenta*/
+.boton_crear_cuenta {
+  width: 9rem;
+  height: 4.5rem;
+  border: unset;
+  border-radius: 0.5rem;
+  color: #212121;
+  z-index: 1;
+  background: #e8e8e8;
+  position: relative;
+  font-weight: 1000;
+  font-size: 1rem;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms;
+  overflow: hidden;
+
+  cursor: pointer;
+}
+ 
+.boton_crear_cuenta::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 0.5rem;
+  background-color: #212121;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 0.5s;
+}
+ 
+.boton_crear_cuenta:hover {
+  color: #e8e8e8;
+
+  border-radius: 2rem;
+  transition: all 250ms;
+}
+ 
+.boton_crear_cuenta:hover::before {
+  width: 100%;
+}
+
+
+.boton_crear_cuenta:hover div{
+  overflow: hidden; 
+  border-right: .2rem solid white; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  animation: 
+    typing 1s steps(40, end),
+    blink-caret .4s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
+}
+
+/*Fin Botón crear cuenta*/
+
+
+/*Botón iniciar sesión*/
+.boton_inicar_sesion {
+  width: 9rem;
+  height: 4.5rem;
+  border: unset;
+  border-radius: 0.5rem;
+  color: #212121;
+  z-index: 1;
+  background: #e8e8e8;
+  position: relative;
+  font-weight: 1000;
+  font-size: 1rem;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms;
+  overflow: hidden;
+
+  cursor: pointer;
+}
+ 
+.boton_inicar_sesion::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 0.5rem;
+  background-color: #212121;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 0.5s;
+
+  transform: rotate(45deg);
+}
+ 
+.boton_inicar_sesion:hover {
+  color: #e8e8e8;
+
+  border-radius: 2rem;
+  transition: all 250ms;
+}
+ 
+.boton_inicar_sesion:hover::before {
+  
+  width: 200px;
+  height: 180px;
+
+  
+}
+
+.animacion-btn-inicio-sesion {
+  
+  animation: rubberBand 1s;
+
+
+
+}
+
+
+/*Fin Botón iniciar sesión*/

@@ -1,0 +1,221 @@
+article{
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+.centrar-texto{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+
+}
+
+p{
+    font-size: 1.5rem;
+    margin: 0;
+    
+
+}
+
+.size-width{
+    width: 70%;
+}
+
+.size-svg{
+    width: 15rem;
+    height: 15rem;
+}
+
+.card-integrante-morado{
+    
+    position: relative;
+    border-radius: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition: .7s ease all;
+}
+
+/*Círculo superior card integrante*/
+.card-integrante-morado::before{
+
+    position: absolute;
+    content: "";
+
+
+    width: 8rem;
+    height: 8rem;
+
+    right: -4rem;
+    top: -2rem;
+    
+    border-radius: 100%;
+
+    background: linear-gradient(91.7deg, rgb(50, 25, 79) -4.3%, rgb(122, 101, 149) 101.8%);
+
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    
+}
+/*Fin Círculo superior card integrante*/
+
+
+.size-info-integrante, .img-integrantes{
+    width: 20rem;
+    height: 30rem;
+}
+
+
+.img-integrantes{
+    
+    object-fit: cover;
+    border-radius: .5rem .5rem 0 0;
+
+    animation: .7s fadeIn ease;
+   
+}
+
+
+/*Breve descripción integrante morado*/
+.morado-b-descrip-i{
+    position: relative;
+    text-align: center;
+    color: white;
+    
+    border-radius: 0 0 .5rem .5rem;
+    height: 12rem;
+
+    overflow: hidden;
+
+    z-index: 2;
+
+    box-shadow: rgb(0, 0, 0) 0px -3px 10px 0px;
+
+    background: linear-gradient(69.9deg, rgba(76, 79, 106, 0.684) 3.2%, rgba(118, 124, 163, 0.905) 97.6%);
+   
+}
+
+/*Círculo abajo derecha*/
+.morado-b-descrip-i::before{
+
+    position: absolute;
+    content: "";
+
+    right: -4rem;
+    margin-top: 2rem;
+
+    
+    height: 12rem;
+    border-radius: 100%;
+    border: 2px solid rgba(0, 0, 0, 0.42);
+
+    background: linear-gradient(91.7deg, rgb(50, 25, 79) -4.3%, rgb(122, 101, 149) 101.8%);
+    z-index: -1;
+    width: 12rem;
+    
+}
+/*Fin Círculo abajo derecha*/
+
+
+/*Nombre integrante*/
+.size-integrante{
+    font-size: 3rem;
+    text-shadow: 3px 10px 8px black;
+    
+    z-index: 1;
+
+    
+}
+/*Nombre integrante*/
+
+
+/*Círculo abajo izquierda*/
+.size-integrante::after{
+    position: absolute;
+    content: "";
+
+
+    bottom: 0;
+    left: -2rem;
+
+    width: 6rem;
+    height: 6rem;
+
+
+    background: linear-gradient(109.6deg, rgb(0, 37, 84) 11.2%, rgba(0, 37, 84, 0.32) 100.2%);
+
+    border-radius: .8rem;
+
+    transform: rotate(35deg);
+
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+    z-index: -1;
+
+
+
+}
+/*Fin Círculo abajo izquierda*/
+
+
+.size-cargo{
+    font-size: 3rem;
+    text-shadow: 3px 10px 8px black;
+}
+
+
+.cargo{
+    position: relative;
+
+    z-index: 1;
+
+    
+  
+}
+
+
+.cargo::before{
+    position: absolute;
+    content: "";
+
+    width: 7rem;
+    height: 1.5rem;
+
+    background: linear-gradient(109.6deg, rgb(0, 37, 84) 11.2%, rgba(0, 37, 84, 0.32) 100.2%);
+
+    border-radius: 1rem;
+
+    z-index: -1;
+
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    
+ 
+}
+
+.cargo::after{
+    position: absolute;
+    content: "";
+
+    bottom: 0;
+    left: 50%;
+
+    width: 7rem;
+    height: 1.5rem;
+
+    background: linear-gradient(109.6deg, rgba(23, 43, 69, 0.829) 11.2%, rgba(2, 25, 54, 0.163) 100.2%);
+
+
+    border-radius: 1rem;
+
+    z-index: -1;
+
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    
+ 
+}
+/*Fin Breve descripción integrante morado*/
+
+
+.giro-tarjeta{
+    transform: rotateY(180deg);
+    transition: .7s ease all;
+
+}
+

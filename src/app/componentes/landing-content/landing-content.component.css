@@ -1,0 +1,175 @@
+.box{
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 85rem;
+    min-height: 40rem;
+    background: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    border-radius: .8rem;
+
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+
+}
+
+/*Estilo bola izquierda superior*/
+.box::before{
+    
+    position: absolute;
+    content: "";
+
+
+    left: -2rem;
+    top: -5rem;
+    width: 20rem;
+    height: 20rem;
+    background: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+    border-radius: 23% 77% 81% 19% / 41% 42% 58% 59%;
+
+    box-shadow: rgba(0, 0, 0, 0.4) -5px 5px, rgba(40, 40, 40, 0.3) -10px 10px, rgba(43, 43, 43, 0.2) -15px 15px, rgba(60, 60, 60, 0.1) -20px 20px, rgba(75, 75, 75, 0.05) -25px 25px;
+}
+/*Fin Estilo bola izquierda superior*/
+
+/*Estilo bola derecha inferior*/
+.box::after{
+    
+    position: absolute;
+    content: "";
+
+    
+    right: -2rem;
+    bottom: -5rem;
+
+    width: 20rem;
+    height: 20rem;
+    background: radial-gradient(circle at 10% 20%, rgb(15, 213, 172) 0%, rgb(34, 182, 198) 100.2%);
+    border-radius: 69% 31% 73% 27% / 48% 55% 45% 52%;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+/*Fin Estilo bola derecha inferior*/
+
+/*Hojas de la derecha de la parte superior*/
+.hoja-d1{
+
+    position: absolute;
+    content: "";
+    right:9rem;
+    top: 1.8rem;
+    width: 100px;
+    height: 100px;
+    border-radius: 0 80px;
+    background: linear-gradient(179.1deg, rgb(43, 170, 96) 2.3%, rgb(129, 204, 104) 98.3%);
+    transform: rotate(-10deg);
+    animation: zoomIn .8s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+
+
+
+.hoja-d2{
+
+    
+
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 5rem;
+    width: 100px;
+    height: 100px;
+    border-radius: 0 80px;
+    background: linear-gradient(179.1deg, rgb(43, 170, 96) 2.3%, rgb(129, 204, 104) 98.3%);
+    transform: rotate(45deg);
+    animation: zoomIn .8s;
+    
+}
+
+.hoja-d3{
+
+    position: absolute;
+    content: "";
+    top: 1.8rem;
+    right: 1rem;
+    width: 100px;
+    height: 100px;
+    border-radius: 0 80px;
+    background: linear-gradient(179.1deg, rgb(43, 170, 96) 2.3%, rgb(129, 204, 104) 98.3%);
+    transform: rotate(100deg);
+    animation: zoomIn .8s;    
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+/*Fin Hojas de la derecha de la parte superior*/
+
+
+/*Hojas de la izquierda de la parte inferior*/
+.hoja-i1{
+
+    position: absolute;
+    content: "";
+    z-index: 2;
+    left: 9rem;
+    bottom: 1.8rem;
+    width: 100px;
+    height: 100px;
+    border-radius: 0 80px;
+    background: linear-gradient(179.1deg, rgb(43, 170, 96) 2.3%, rgb(129, 204, 104) 98.3%);
+    transform: rotate(100deg);
+    animation: zoomIn 2s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+.hoja-i2{
+
+    position: absolute;
+    content: "";
+    z-index: 1;
+    bottom: 3.5rem;
+    left: 5rem;
+    width: 100px;
+    height: 100px;
+    border-radius: 0 80px;
+    background: linear-gradient(179.1deg, rgb(43, 170, 96) 2.3%, rgb(129, 204, 104) 98.3%);
+    transform: rotate(45deg);
+    animation: zoomIn 2s;
+    
+}
+
+.hoja-i3{
+
+    position: absolute;
+    content: "";
+    bottom: 1.8rem;
+    left: .9rem;
+    width: 100px;
+    height: 100px;
+    border-radius: 0 80px;
+    background: linear-gradient(179.1deg, rgb(43, 170, 96) 2.3%, rgb(129, 204, 104) 98.3%);
+    transform: rotate(-10deg);
+    animation: zoomIn .8s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/*Fin Hojas de la izquierda de la parte inferior*/
+
+
+/*Contenedor de los datos del landing*/
+.content-datos{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+
+}
+/*Contenedor de los datos del landing*/
