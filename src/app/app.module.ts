@@ -9,6 +9,7 @@ import { FooterComponent } from './componentes/footer/footer.component';
 import { LandingContentComponent } from './componentes/landing-content/landing-content.component';
 import { DatosLandingComponent } from './componentes/datos-landing/datos-landing.component';
 import { NoticiasComponent } from './componentes/noticias/noticias.component';
+import { HistoriasSuperacionComponent } from './componentes/historias-superacion/historias-superacion.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NoticiasComponent } from './componentes/noticias/noticias.component';
     FooterComponent,
     LandingContentComponent,
     DatosLandingComponent,
-    NoticiasComponent
+    NoticiasComponent,
+    HistoriasSuperacionComponent
   ],
   imports: [
     BrowserModule,
