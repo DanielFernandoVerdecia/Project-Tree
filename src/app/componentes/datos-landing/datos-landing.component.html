@@ -52,57 +52,87 @@
       <!--Integrantes fotos-->
       <div class = "centrar-texto">
 
-         <!--Foto fundadora-->
-         <div class = "card-integrante-morado  roboto-fuente"
-         (mouseenter) = "activar_giro_card('Tarjeta 1')"
-         (mouseleave) = "desactivar_giro_card('Tarjeta 1')"
-         
-         [ngClass] = "{'giro-tarjeta': animacion_card_morado}"
+        <!--Collider Card-->
+        <div
+        (mouseenter) = "activar_giro_card('Tarjeta 1')"
+        (mouseleave) = "desactivar_giro_card('Tarjeta 1')"
+        >
 
-         >
-
-            <img 
-
-            *ngIf = "!animacion_card_morado"
+            <!--Foto fundadora-->
+            <div class = "card-integrante-morado  roboto-fuente"
             
-            class = "img-integrantes"
-            src = "./assets/content-info/fundadora.png" alt="">
             
-            <!--Info completa Integrante-->
-            <div
-            class = "size-info-integrante"
-            *ngIf = "animacion_card_morado"
+            [ngClass] = "{'giro-tarjeta': animacion_card_morado}"
+
             >
 
+                <img 
+
+                *ngIf = "!animacion_card_morado"
+                
+                class = "img-integrantes"
+                src = "./assets/content-info/fundadora.png" alt="">
+                
+                <!--Info completa Integrante-->
+                <div
+                class = "size-info-integrante"
+                *ngIf = "animacion_card_morado"
+                >
+
+                
+
+                </div>
+                <!--Fin Info completa Integrante-->
+                
+                <!--Breve descripción integrante-->
+                <div class = "morado-b-descrip-i">
+
+                <p class = "caveat-fuente size-integrante"
+                *ngIf = "!animacion_card_morado"
+                >
+                    Angela Manrique.
+                </p>
+
+                <!--Cargo-->
+                <p class = "cargo rancho-fuente size-cargo"
+                *ngIf = "!animacion_card_morado"
+                >
+                    Fundadora
+                </p>
+                <!--Fin Cargo-->
+
+                </div>
+                <!--Fin Breve descripción integrante-->
+
             </div>
-            <!--Fin Info completa Integrante-->
-            
-            <!--Breve descripción integrante-->
-            <div class = "morado-b-descrip-i">
+            <!--Fin Foto fundadora-->
 
-               <p class = "caveat-fuente size-integrante">
-                Angela Manrique.
-               </p>
+        </div>
+        <!--Fin Collider Card-->
 
-               <!--Cargo-->
-               <p class = "cargo rancho-fuente size-cargo">
-                  Fundadora
-               </p>
-               <!--Fin Cargo-->
+        
+      </div> 
+      <!--Fin Integrantes fotos-->
 
-            </div>
-            <!--Fin Breve descripción integrante-->
-
-         </div>
-         <!--Fin Foto fundadora-->
-       </div> 
-        <!--Fin Integrantes fotos-->
 
       
 
     </article>
    <!--Fin Integrantes-->      
 
+
+   <!--Últimas noticias-->
+   <article>
+
+    <h1 class = "rancho-fuente centrar-texto size-title">
+        Últimas noticias
+    </h1>
+    
+    <app-noticias class = "centrar-texto">
+    </app-noticias>
+
+   </article>
+   <!--Fin Últimas noticias-->
     
 
    

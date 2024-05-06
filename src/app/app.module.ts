@@ -8,6 +8,7 @@ import { HeaderLandingComponent } from './componentes/header-landing/header-land
 import { FooterComponent } from './componentes/footer/footer.component';
 import { LandingContentComponent } from './componentes/landing-content/landing-content.component';
 import { DatosLandingComponent } from './componentes/datos-landing/datos-landing.component';
+import { NoticiasComponent } from './componentes/noticias/noticias.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { DatosLandingComponent } from './componentes/datos-landing/datos-landing
     HeaderLandingComponent,
     FooterComponent,
     LandingContentComponent,
-    DatosLandingComponent
+    DatosLandingComponent,
+    NoticiasComponent
   ],
   imports: [
     BrowserModule,

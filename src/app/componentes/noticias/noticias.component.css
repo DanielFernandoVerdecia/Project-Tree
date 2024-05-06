@@ -1,0 +1,43 @@
+.size-slider{
+    
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+
+    width: 60rem;
+    min-height: 55rem;
+
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+    border-radius: .7rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 6rem;
+
+
+}
+
+img{
+
+    object-fit: cover;
+    object-position: center;
+    border-radius: .7rem;
+
+    height: 50rem;
+
+}
+
+h1{
+
+    margin-top: 1.5rem;
+  
+    overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 85%;
+  height: 4rem;
+    
+}
