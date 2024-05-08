@@ -11,6 +11,19 @@ import { DatosLandingComponent } from './componentes/datos-landing/datos-landing
 import { NoticiasComponent } from './componentes/noticias/noticias.component';
 import { HistoriasSuperacionComponent } from './componentes/historias-superacion/historias-superacion.component';
 
+//Para usar PrimeNG animaciones
+import { ToastModule } from 'primeng/toast';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { FormsModule } from '@angular/forms';
+import { ContenidoComponent } from './componentes/contenido/contenido.component';
+import { ContenidoNoticiasComponent } from './componentes/contenido-noticias/contenido-noticias.component';
+
+//AOS para hacer Scroll animación
+
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,11 +33,16 @@ import { HistoriasSuperacionComponent } from './componentes/historias-superacion
     LandingContentComponent,
     DatosLandingComponent,
     NoticiasComponent,
-    HistoriasSuperacionComponent
+    HistoriasSuperacionComponent,
+    ContenidoComponent,
+    ContenidoNoticiasComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    ToastModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

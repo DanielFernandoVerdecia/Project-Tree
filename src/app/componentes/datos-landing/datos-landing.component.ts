@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-datos-landing',
   templateUrl: './datos-landing.component.html',
