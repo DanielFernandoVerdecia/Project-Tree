@@ -45,3 +45,49 @@
 
 /*Fin Fuentes letras*/
 
+
+/*Estilo citar autor o fuente*/
+blockquote{
+    font-size: 1.8rem;
+
+    font-family: 'Roboto';
+    width:60%;
+    margin:50px auto;
+    font-style:italic;
+    color: #4e4e4e;
+    padding: 2rem 30px 2rem 75px;
+    border-left:8px solid #92C7CF;
+    line-height:1.6;
+    position: relative;
+    background:#FFF7F1;
+
+    border-radius: 0 1rem 1rem 0;
+
+}
+  
+blockquote::before{
+    font-family:Arial;
+    content: "\201C";
+    color: #AAD7D9;
+    font-size:4em;
+    position: absolute;
+    left: 10px;
+    top:-10px;
+}
+  
+
+blockquote span{
+    display:block;
+    color:#333333;
+    font-style: normal;
+    font-weight: bold;
+    margin-top:1rem;
+}
+/*Fin Estilo citar autor o fuente*/
+
+
+hr{
+    border: 0;
+    height: .15rem;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}

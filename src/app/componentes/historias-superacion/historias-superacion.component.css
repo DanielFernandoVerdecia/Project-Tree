@@ -1,4 +1,4 @@
-div{
+article{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,9 +6,15 @@ div{
 
 }
 
+figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 img{
-    width: 35%;
-    height: 35%;
+    width: 65%;
+    height: 65%;
 
     border-radius: .6rem;
     object-fit: cover;
@@ -21,4 +27,5 @@ img{
 p{
     font-size: 1.8rem;
     font-family: 'Roboto';
+    width: 60%;
 }

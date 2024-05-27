@@ -18,6 +18,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { ContenidoComponent } from './componentes/contenido/contenido.component';
 import { ContenidoNoticiasComponent } from './componentes/contenido-noticias/contenido-noticias.component';
+import { LoginComponent } from './componentes/login/login.component';
+import { CrearCuentaComponent } from './componentes/crear-cuenta/crear-cuenta.component';
+import { Ruta404Component } from './componentes/ruta404/ruta404.component';
 
 //AOS para hacer Scroll animación
 
@@ -35,7 +38,10 @@ import { ContenidoNoticiasComponent } from './componentes/contenido-noticias/con
     NoticiasComponent,
     HistoriasSuperacionComponent,
     ContenidoComponent,
-    ContenidoNoticiasComponent
+    ContenidoNoticiasComponent,
+    LoginComponent,
+    CrearCuentaComponent,
+    Ruta404Component
   ],
   imports: [
     BrowserModule,
