@@ -1,1 +1,93 @@
-<p>crear-cuenta works!</p>
+<section class = "contenido">
+
+    <div class = "box">
+
+        <header class = "header-login space-up">
+
+            <section>
+                <i class="fa-solid fa-user"></i>
+            </section>
+
+        </header>
+
+
+        <main>
+
+            <!--Elejir cargo-->
+            <section class = "card space">
+
+                <p class = "roboto-fuente">
+                    Seleccione su cargo de usuario
+                </p>
+
+                <select 
+                
+                 class="form-select" 
+                 aria-label="Default select example"
+                 
+
+                 (change) = "seleccionar($event)"
+                 [(ngModel)] = "rol_select.rol"
+
+                 [disabled] = "rol_select.now_animation"
+                 >
+
+                    <option selected value = "">--Elija un rol</option>
+                    <option value = "Admin">Administrador</option>
+                    <option value = "Colaborador">Colaborador</option>
+                
+                </select>
+                
+                <p 
+                *ngIf = "rol_select.error_message.view"
+                class = "error-texto roboto-fuente">
+                    {{rol_select.error_message.text}}
+                </p>
+
+
+            </section>
+            <!--Fin Elejir cargo-->
+
+
+            <!--Cuenta Gmail-->
+            <section class = "card space">
+
+                <p class = "roboto-fuente">
+                    Elija su cuenta de Gmail
+                </p>
+
+                <article class = "content-gmail">
+
+                    <picture *ngIf = "rol_select.view_leaf">
+                        <img 
+                        class = "hoja1 class-animation-leafs-in"
+                        [ngClass] = "{'class-animation-leaf1-out': rol_select.view_gmail}"
+                        src = "./assets/crear-cuenta/leaf1.svg" alt="">
+                    </picture>
+
+                    <picture *ngIf = "rol_select.view_leaf">
+                        <img 
+                        class = "hoja2 class-animation-leafs-in"
+                        [ngClass] = "{'class-animation-leaf2-out': rol_select.view_gmail}"
+                        src = "./assets/crear-cuenta/leaf2.svg" alt="">
+                    </picture>
+        
+
+                    <button class = "btn btn-info size-button-gmail"
+                    >
+                        sikas
+                    </button>
+                    
+
+                </article>
+
+            </section>
+            <!--Fin Cuenta Gmai-->
+
+        
+        </main>
+
+    </div>
+
+
+</section>

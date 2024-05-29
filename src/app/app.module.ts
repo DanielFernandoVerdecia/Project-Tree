@@ -22,7 +22,7 @@ import { LoginComponent } from './componentes/login/login.component';
 import { CrearCuentaComponent } from './componentes/crear-cuenta/crear-cuenta.component';
 import { Ruta404Component } from './componentes/ruta404/ruta404.component';
 
-//AOS para hacer Scroll animación
+import {ButtonModule} from 'primeng/button';
 
 
 
@@ -48,7 +48,8 @@ import { Ruta404Component } from './componentes/ruta404/ruta404.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     ToastModule,
-    FormsModule
+    FormsModule,
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

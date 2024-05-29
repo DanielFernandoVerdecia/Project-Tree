@@ -1,6 +1,11 @@
 @import "primeng/resources/themes/lara-light-blue/theme.css";
 @import "primeng/resources/primeng.css";
 
+body {
+    font-family: var(--font-family);
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -90,4 +95,30 @@ hr{
     border: 0;
     height: .15rem;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.space{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.space-up{
+    margin-top: 3rem;
+}
+
+.error-texto{
+
+    animation: rubberBand .9s;
+    background: radial-gradient(circle at 10% 20%, rgb(226, 37, 37) 0%, rgb(211, 49, 49) 82.8%);
+    color: white;
+    padding: .7rem;
+    border-radius: 2rem;
+
+    min-width: 15em;
+
+    text-align: center;
+
+    font-size: 1.15rem;
+
+
 }
