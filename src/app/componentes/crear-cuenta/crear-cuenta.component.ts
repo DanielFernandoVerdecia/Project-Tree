@@ -21,12 +21,15 @@ export class CrearCuentaComponent {
  
   delay_delete_leafs(seconds: number){
 
-    setTimeout(() => {
+    const delay = setTimeout(() => {
       
       this.rol_select.view_leaf = false;
+      clearTimeout(delay);
       this.rol_select.now_animation = false;
       
     }, seconds * 1000);
+
+    
 
   }
   
